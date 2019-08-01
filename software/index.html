@@ -9,23 +9,19 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Mark Moll</title>
-<meta name="description" content="roboticist • scientist • engineer">
+<!-- begin _includes/seo.html --><title>Software | Mark Moll</title>
+<meta name="description" content="">
 
 
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Mark Moll">
-<meta property="og:title" content="Mark Moll">
-<meta property="og:url" content="https://moll.ai/">
-
-
-  <meta property="og:description" content="roboticist • scientist • engineer">
+<meta property="og:title" content="Software">
+<meta property="og:url" content="https://moll.ai/software/">
 
 
 
-  <meta property="og:image" content="https://moll.ai/assets/images/multnomah_falls.jpg">
 
 
 
@@ -40,7 +36,7 @@
   
 
 
-<link rel="canonical" href="https://moll.ai/">
+<link rel="canonical" href="https://moll.ai/software/">
 
 
 
@@ -104,7 +100,7 @@
 
   </head>
 
-  <body class="layout--single frontpage">
+  <body class="layout--single">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -152,45 +148,6 @@
 
     <div class="initial-content">
       
-  
-
-
-
-
-
-
-
-
-
-
-
-<div class="page__hero--overlay"
-  style=" background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/multnomah_falls.jpg');"
->
-  
-    <div class="wrapper">
-      <h1 id="page-title" class="page__title" itemprop="headline">
-        
-          Mark Moll
-
-        
-      </h1>
-      
-        <p class="page__lead">roboticist • scientist • engineer
-</p>
-      
-      
-      
-      
-    </div>
-  
-  
-    <span class="page__hero-caption">Photo credit: <strong><a href="https://pixabay.com/images/id-1899890/">Pixabay</a></strong>
-</span>
-  
-</div>
-
-
 
 
 
@@ -320,35 +277,43 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Software">
     
-    <meta itemprop="description" content="roboticist • scientist • engineer">
     
     
 
     <div class="page__inner-wrap">
       
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Software
+</h1>
+          
+        </header>
+      
 
       <section class="page__content" itemprop="text">
         
-        <p>Mark Moll is a senior staff roboticist at <a href="https://picknik.ai">PickNik</a>, a robotics consultancy company that is supporting the development of the <a href="https://moveit.ros.org">MoveIt motion planning framework</a>. He is also a
-senior research scientist in the <a href="https://www.cs.rice.edu">Computer Science Department</a> at <a href="https://www.rice.edu">Rice University</a>. He lives in Portland, Oregon.</p>
+        <p>Over the years I have developed and contributed to several software packages and web services:</p>
 
-<p>Mark Moll has worked in robotics for more than 20 years, with a focus on motion planning.  He is leading the development of the <a href="https://ompl.kavrakilab.org">Open Motion Planning Library (OMPL)</a>, which is widely used in industry and academic research (often via <a href="https://moveit.ros.org">MoveIt</a> in <a href="https://ros.org">ROS</a>). He has over 80 peer-reviewed publications with research contributions in applied algorithms for problems in robotics and computational structural biology. He has extensive experience deploying novel algorithms on a variety of robotic platforms, ranging from NASA’s Robonaut2 to autonomous underwater vehicles and self-reconfigurable robots.</p>
+<h2 id="the-open-motion-planning-library"><a href="http://ompl.kavrakilab.org">The Open Motion Planning Library</a></h2>
 
-<p>Mark Moll received an M.S. in Computer Science from the University of Twente in the Netherlands and a Ph.D. in Computer Science from Carnegie Mellon University where he worked with <a href="https://www.cs.cmu.edu/~me">Michael Erdmann</a> and <a href="https://www.cs.cmu.edu/~mason">Matt Mason</a>. Afterwards, he was a postdoctoral research associate in <a href="http://kavrakilab.org">Lydia Kavraki’s group</a>. After being a research scientist at the University of Southern California’s <a href="https://www.isi.edu">Information Sciences Institute</a> for a while he returned to Rice University. In September 2019 he joined PickNik, while keeping a part-time appointment at Rice University.</p>
+<p>OMPL is a lightweight, thread-safe, easy-to-use, and extensible library for sampling-based motion planning. The code is written in C++, includes Python bindings and is released under the BSD license. OMPL is also integrated with the <a href="http://www.ros.org">Robot Operating System (ROS)</a> via <a href="https://moveit.ros.org">MoveIt</a>. On top of the OMPL library, we have developed OMPL.app: a GUI for rigid body motion planning that allows users to load a variety of mesh formats that define a robot and its environment, define start and goal states, and play around with different planners. This is joint work with <a href="http://ioan.sucan.ro">Ioan Sucan</a>, <a href="http://zkingston.com">Zak Kingston</a>, <a href="https://ryanluna.com">Ryan Luna</a>, <a href="https://dav.ee">Dave Coleman</a>, and <a href="http://ompl.kavrakilab.org/developers.html">many others</a>.</p>
 
-<p>More details can be found in his <a href="mmoll-cv.pdf" onclick="pageTracker._trackPageview('./mmoll-cv.pdf');">curriculum vitae</a>.</p>
+<h2 id="the-dinc-server"><a href="http://dinc.kavrakilab.org">The DINC Server</a></h2>
 
-<h2 id="news">News</h2>
+<p>A web server for incremental molecular docking of large ligands and peptides. This is joint work with <a href="http://www.kavrakilab.org/people/DinlerAntunes.html">Dinler Antunes</a>, <a href="https://www.researchgate.net/profile/Didier_Devaurs">Didier Devaurs</a>, Ankur Dhanik and <a href="http://dinc.kavrakilab.org/acknowledgements/">several others</a>.</p>
 
-<ul>
-  <li>I gave a talk entitled “Toward Robot Autonomy: Tasks, Plans, and Policies” at the <a href="http://scr.tamu.edu/?page_id=718">Texas Systems Day</a> on April 5, 2019 at Texas A&amp;M.</li>
-  <li>I gave a talk entitled “Robot Motion Planning: Challenges and Opportunities for Increasing Robot Autonomy” at the <a href="https://techcollaboration.center">Technology Collaboration Center</a>’s Automation, AI &amp; Robotics Workshop on March 27, 2019 held at the NASA Johnson Space Center.</li>
-  <li>I taught a tutorial on sampling-based path planning at the <a href="http://cognitive-robotics17.csail.mit.edu">First Summer School on Cognitive Robotics</a>, held at MIT in June 2017.</li>
-  <li>The server for molecular docking of large ligands has been significantly enhanced. <a href="http://dinc.kavrakilab.org">Give it a try!</a> <a href="http://www.kavrakilab.org/people/DinlerAntunes.html">Dinler Antunes</a> made some excellent <a href="http://dinc.kavrakilab.org/help/">video tutorials</a>.</li>
-  <li>I taught a half-day lecture on sampling-based motion planning and its combination with task planning at the <a href="http://icaps16.icaps-conference.org/summer-school.html">2016 ICAPS Summer School</a>.</li>
-</ul>
+<h2 id="the-labelhash-server"><a href="http://labelhash.kavrakilab.org">The LabelHash Server</a></h2>
 
+<p>A web server for matching 3D structural motifs in proteins against the proteins in the Protein Data Bank. With a plugin for Chimera the match results can be visualized. This is joint work with <a href="http://drewbryant.com">Drew Bryant</a>.</p>
+
+<h2 id="the-fasst-live-server"><a href="http://fasst.kavrakilab.org">The FASST Live Server</a></h2>
+
+<p>FASST Live is a web server for identifying clusters of proteins that share local structural similarity. This is mainly the work of <a href="http://drewbryant.com">Drew Bryant</a>.</p>
+
+<h2 id="macports"><a href="http://www.macports.org">MacPorts</a></h2>
+
+<p>I maintain a number of scientific software ports for <a href="http://www.macports.org">MacPorts</a>, an Open Source package manager for macOS.</p>
 
         
       </section>
