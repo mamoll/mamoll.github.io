@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.16.5 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.16.6 by Michael Rose
   Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
@@ -12,6 +12,8 @@
 <!-- begin _includes/seo.html --><title>Tactile Sensing | Mark Moll</title>
 <meta name="description" content="">
 
+
+  <meta name="author" content="Mark Moll">
 
 
 <meta property="og:type" content="website">
@@ -41,19 +43,16 @@
 
 
 
-
-
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
       "@type": "Person",
       "name": "Mark Moll",
-      "url": "https://moll.ai",
-      "sameAs": null
-    }
-  </script>
-
+      "url": "https://moll.ai/"
+    
+  }
+</script>
 
 
 
@@ -295,7 +294,7 @@
         
         <p><img src="/assets/images/palms.png" alt="" title="Two palms reconstructing the shape of an unknown object from tactile data." class="align-right" width="220px" /></p>
 
-<p><a href="http://www.cs.cmu.edu/~me">Michael Erdmann</a> and I have developed a method to reconstruct the shape of an unknown object using tactile sensors without requiring object immobilization <a class="citation" href="#moll2004reconstructing-the-shape-and-motion-of-unknown">[1]</a><a class="citation" href="#moll2002shape-recon-using-activ">[2]</a>. Instead, the robot manipulates the object without prehension. The robot infers the shape, motion and center of mass of the object based on the motion of the contact points as measured by tactile sensors. This allows for a natural, continuous interaction between manipulation and sensing. Eventually, it will make robots more capable in the physical world by enabling them to pick up unknown objects.</p>
+<p><a href="https://www.cs.cmu.edu/~me">Michael Erdmann</a> and I have developed a method to reconstruct the shape of an unknown object using tactile sensors without requiring object immobilization <a class="citation" href="#moll2004reconstructing-the-shape-and-motion-of-unknown">[1]</a><a class="citation" href="#moll2002shape-recon-using-activ">[2]</a>. Instead, the robot manipulates the object without prehension. The robot infers the shape, motion and center of mass of the object based on the motion of the contact points as measured by tactile sensors. This allows for a natural, continuous interaction between manipulation and sensing. Eventually, it will make robots more capable in the physical world by enabling them to pick up unknown objects.</p>
 
 <p>We have analyzed several different cases of the tactile shape reconstruction problem. First, we considered planar shapes with quasistatic dynamics. Simulations and experiments have validated the analytic results. Next, we extended the analysis to the full dynamics and prove observability of the nonlinear system describing the shape and motion of the object being manipulated. In our simulations, a simple observer based on Newton’s method for root finding can recover unknown shapes with almost negligible errors. Using the same framework we can also describe the shape and dynamics of three-dimensional objects. However, there are some fundamental differences between the planar and three-dimensional case, due to increased tangent dimensionality. Also, perfect global shape reconstruction is impossible in the 3D case, but it is almost trivial to obtain upper and lower bounds on the shape. The 3D shape reconstruction method has also been implemented and we present some simulation results.</p>
 
@@ -349,7 +348,7 @@
     </a>
   
   
-    <a class="btn" onclick="pageTracker._trackPageview('http://dx.doi.org/10.1007/b80173');" href="http://dx.doi.org/10.1007/b80173">
+    <a class="btn" onclick="pageTracker._trackPageview('https://dx.doi.org/10.1007/b80173');" href="https://dx.doi.org/10.1007/b80173">
       publisher
     </a>
   
@@ -365,30 +364,30 @@
 
 <div class="card collapse" id="bibmoll2004reconstructing-the-shape-and-motion-of-unknown">
   <h3>BibTeX</h3>
-  <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span></span><span class="nc">@incollection</span><span class="p">{</span><span class="nl">moll2004reconstructing-the-shape-and-motion-of-unknown</span><span class="p">,</span>
-  <span class="na">abstract</span> <span class="p">=</span> <span class="s">&quot;We present a method to simultaneously reconstruct the shape and</span>
-<span class="s">        motion of an unknown smooth convex object. The object is manipulated by</span>
-<span class="s">        planar palms covered with tactile elements. The shape and dynamics of</span>
-<span class="s">        the object can be expressed as a function of the sensor values and the</span>
-<span class="s">        motion of the palms. We present a brief review of previous results for</span>
-<span class="s">        the planar case. In this paper we show that the 3D case is</span>
-<span class="s">        fundamentally different from the planar case, due to increased tangent</span>
-<span class="s">        dimensionality. The main contribution of this paper is a shape-dynamics</span>
-<span class="s">        analysis in 3D, and the synthesis of shape approximation methods via</span>
-<span class="s">        reconstructed contact point curves.&quot;</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Moll, Mark and Erdmann, Michael A.&quot;</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">&quot;Algorithmic Foundations of Robotics V&quot;</span><span class="p">,</span>
-  <span class="na">doi</span> <span class="p">=</span> <span class="s">&quot;10.1007/b80173&quot;</span><span class="p">,</span>
-  <span class="na">editor</span> <span class="p">=</span> <span class="s">&quot;Boissonnat, Jean-Daniel and Burdick, Joel and Goldberg, Ken and Hutchinson, Seth&quot;</span><span class="p">,</span>
-  <span class="na">keywords</span> <span class="p">=</span> <span class="s">&quot;tactile sensing, shape reconstruction, nonprehensile</span>
-<span class="s">        manipulation, contact kinematics&quot;</span><span class="p">,</span>
-  <span class="na">pages</span> <span class="p">=</span> <span class="s">&quot;293--310&quot;</span><span class="p">,</span>
-  <span class="na">publisher</span> <span class="p">=</span> <span class="s">&quot;Springer Verlag&quot;</span><span class="p">,</span>
-  <span class="na">series</span> <span class="p">=</span> <span class="s">&quot;Springer Tracts in Advanced Robotics&quot;</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Reconstructing the Shape and Motion of Unknown Objects with Active</span>
-<span class="s">        Tactile Sensors&quot;</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2004&quot;</span>
-<span class="p">}</span></code></pre></figure>
+  <figure class="highlight"><pre><code class="language-xpath" data-lang="xpath"><span class="na">@incollection</span><span class="p">{</span><span class="nt">moll2004reconstructing-the-shape-and-motion-of-unknown</span><span class="o">,</span><span class="w">
+  </span><span class="nt">abstract</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"We present a method to simultaneously reconstruct the shape and
+        motion of an unknown smooth convex object. The object is manipulated by
+        planar palms covered with tactile elements. The shape and dynamics of
+        the object can be expressed as a function of the sensor values and the
+        motion of the palms. We present a brief review of previous results for
+        the planar case. In this paper we show that the 3D case is
+        fundamentally different from the planar case, due to increased tangent
+        dimensionality. The main contribution of this paper is a shape-dynamics
+        analysis in 3D, and the synthesis of shape approximation methods via
+        reconstructed contact point curves."</span><span class="o">,</span><span class="w">
+  </span><span class="nt">author</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Moll, Mark and Erdmann, Michael A."</span><span class="o">,</span><span class="w">
+  </span><span class="nt">booktitle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Algorithmic Foundations of Robotics V"</span><span class="o">,</span><span class="w">
+  </span><span class="nt">doi</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"10.1007/b80173"</span><span class="o">,</span><span class="w">
+  </span><span class="nt">editor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Boissonnat, Jean-Daniel and Burdick, Joel and Goldberg, Ken and Hutchinson, Seth"</span><span class="o">,</span><span class="w">
+  </span><span class="nt">keywords</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"tactile sensing, shape reconstruction, nonprehensile
+        manipulation, contact kinematics"</span><span class="o">,</span><span class="w">
+  </span><span class="nt">pages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"293--310"</span><span class="o">,</span><span class="w">
+  </span><span class="nt">publisher</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Springer Verlag"</span><span class="o">,</span><span class="w">
+  </span><span class="nt">series</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Springer Tracts in Advanced Robotics"</span><span class="o">,</span><span class="w">
+  </span><span class="nt">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Reconstructing the Shape and Motion of Unknown Objects with Active
+        Tactile Sensors"</span><span class="o">,</span><span class="w">
+  </span><span class="nt">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"2004"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
 </div>
 
 
@@ -434,37 +433,37 @@
 
 <div class="card collapse" id="bibmoll2002shape-recon-using-activ">
   <h3>BibTeX</h3>
-  <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span></span><span class="nc">@phdthesis</span><span class="p">{</span><span class="nl">moll2002shape-recon-using-activ</span><span class="p">,</span>
-  <span class="na">abstract</span> <span class="p">=</span> <span class="s">&quot;We present a new method to reconstruct the shape of an unknown</span>
-<span class="s">        object using tactile sensors, without requiring object immobilization.</span>
-<span class="s">        Instead, sensing and nonprehensile manipulation occur simultaneously.</span>
-<span class="s">        The robot infers the shape, motion and center of mass of the object</span>
-<span class="s">        based on the motion of the contact points as measured by the tactile</span>
-<span class="s">        sensors. This allows for a natural, continuous interaction between</span>
-<span class="s">        manipulation and sensing. We analyze the planar case first by assuming</span>
-<span class="s">        quasistatic dynamics, and present simulation results and experimental</span>
-<span class="s">        results obtained using this analysis. We extend this analysis to the</span>
-<span class="s">        full dynamics and prove observability of the nonlinear system</span>
-<span class="s">        describing the shape and motion of the object being manipulated. In our</span>
-<span class="s">        simulations, a simple observer based on Newton&#39;s method for root</span>
-<span class="s">        finding performs really well. Using the same framework we can also</span>
-<span class="s">        describe the shape and dynamics of three-dimensional objects. However,</span>
-<span class="s">        there are some fundamental differences between the planar and</span>
-<span class="s">        three-dimensional case, due to increased tangent dimensionality. Also,</span>
-<span class="s">        perfect global shape reconstruction is impossible in the 3D case, but</span>
-<span class="s">        it is almost trivial to obtain upper and lower bounds on the shape. The</span>
-<span class="s">        3D shape reconstruction method has also been implemented and we present</span>
-<span class="s">        some simulation results.&quot;</span><span class="p">,</span>
-  <span class="na">address</span> <span class="p">=</span> <span class="s">&quot;Pittsburgh, PA&quot;</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">&quot;Moll, Mark&quot;</span><span class="p">,</span>
-  <span class="na">keywords</span> <span class="p">=</span> <span class="s">&quot;tactile sensing, shape reconstruction, nonprehensile</span>
-<span class="s">        manipulation&quot;</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="nv">jul</span><span class="p">,</span>
-  <span class="na">pubtype</span> <span class="p">=</span> <span class="s">&quot;Other&quot;</span><span class="p">,</span>
-  <span class="na">school</span> <span class="p">=</span> <span class="s">&quot;Computer Science Department, Carnegie Mellon University&quot;</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">&quot;Shape Reconstruction Using Active Tactile Sensors&quot;</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">&quot;2002&quot;</span>
-<span class="p">}</span></code></pre></figure>
+  <figure class="highlight"><pre><code class="language-xpath" data-lang="xpath"><span class="na">@phdthesis</span><span class="p">{</span><span class="nt">moll2002shape-recon-using-activ</span><span class="o">,</span><span class="w">
+  </span><span class="nt">abstract</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"We present a new method to reconstruct the shape of an unknown
+        object using tactile sensors, without requiring object immobilization.
+        Instead, sensing and nonprehensile manipulation occur simultaneously.
+        The robot infers the shape, motion and center of mass of the object
+        based on the motion of the contact points as measured by the tactile
+        sensors. This allows for a natural, continuous interaction between
+        manipulation and sensing. We analyze the planar case first by assuming
+        quasistatic dynamics, and present simulation results and experimental
+        results obtained using this analysis. We extend this analysis to the
+        full dynamics and prove observability of the nonlinear system
+        describing the shape and motion of the object being manipulated. In our
+        simulations, a simple observer based on Newton's method for root
+        finding performs really well. Using the same framework we can also
+        describe the shape and dynamics of three-dimensional objects. However,
+        there are some fundamental differences between the planar and
+        three-dimensional case, due to increased tangent dimensionality. Also,
+        perfect global shape reconstruction is impossible in the 3D case, but
+        it is almost trivial to obtain upper and lower bounds on the shape. The
+        3D shape reconstruction method has also been implemented and we present
+        some simulation results."</span><span class="o">,</span><span class="w">
+  </span><span class="nt">address</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Pittsburgh, PA"</span><span class="o">,</span><span class="w">
+  </span><span class="nt">author</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Moll, Mark"</span><span class="o">,</span><span class="w">
+  </span><span class="nt">keywords</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"tactile sensing, shape reconstruction, nonprehensile
+        manipulation"</span><span class="o">,</span><span class="w">
+  </span><span class="nt">month</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nt">jul</span><span class="o">,</span><span class="w">
+  </span><span class="nt">pubtype</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Other"</span><span class="o">,</span><span class="w">
+  </span><span class="nt">school</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Computer Science Department, Carnegie Mellon University"</span><span class="o">,</span><span class="w">
+  </span><span class="nt">title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"Shape Reconstruction Using Active Tactile Sensors"</span><span class="o">,</span><span class="w">
+  </span><span class="nt">year</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"2002"</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
 </div>
 
 
